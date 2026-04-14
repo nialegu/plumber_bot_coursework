@@ -1,0 +1,137 @@
+<aiml>
+
+    <category>
+        <pattern>ПРИВЕТ</pattern>
+        <template>
+            <random>
+                <li>Здравствуйте! Чем могу помочь?</li>
+                <li>Привет! Помогу с выбором сантехники</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* ПРИВЕТ *</pattern>
+        <template>Здравствуйте</template>
+    </category>
+
+    <!-- ПРОЩАНИЕ -->
+    <category>
+        <pattern>ПОКА</pattern>
+        <template>До свидания</template>
+    </category>
+
+    <category>
+        <pattern>* ДО СВИДАНИЯ *</pattern>
+        <template>Всего доброго</template>
+    </category>
+
+    <!-- СОСТОЯНИЕ -->
+    <category>
+        <pattern>КАК ДЕЛА</pattern>
+        <template>
+            <random>
+                <li>Все хорошо</li>
+                <li>Отлично! Готов помочь</li>
+            </random>
+        </template>
+    </category>
+
+    <!-- ВОЗМОЖНОСТИ -->
+    <category>
+        <pattern>ЧТО ТЫ УМЕЕШЬ</pattern>
+        <template>Я помогаю подобрать сантехнику и отвечаю на вопросы</template>
+    </category>
+
+    <category>
+        <pattern>* ПОМОЩЬ *</pattern>
+        <template>Я могу помочь с выбором сантехники</template>
+    </category>
+
+    <!-- БЛАГОДАРНОСТЬ -->
+    <category>
+        <pattern>СПАСИБО</pattern>
+        <template>Пожалуйста</template>
+    </category>
+
+    <category>
+        <pattern>* СПАСИБО *</pattern>
+        <template>Рад помочь</template>
+    </category>
+
+    <!-- ТОВАРЫ -->
+    <category>
+        <pattern>* СМЕСИТЕЛЬ *</pattern>
+        <template>Могу предложить смеситель</template>
+    </category>
+
+    <category>
+        <pattern>* ВАННА *</pattern>
+        <template>Рассмотрите акриловую ванну</template>
+    </category>
+
+    <category>
+        <pattern>* УНИТАЗ *</pattern>
+        <template>Есть хорошие модели унитазов</template>
+    </category>
+
+    <category>
+        <pattern>* ДУШ *</pattern>
+        <template>Могу предложить душевую кабину</template>
+    </category>
+
+    <category>
+        <pattern>* РАКОВИНА *</pattern>
+        <template>Рекомендую керамическую раковину</template>
+    </category>
+
+    <!-- ЦЕНА -->
+    <category>
+        <pattern>*ЦЕНА*</pattern>
+        <template>Цена зависит от модели и производителя</template>
+    </category>
+
+    <category>
+        <pattern>*СКОЛЬКО СТОИТ*</pattern>
+        <template>Стоимость зависит от конкретного товара</template>
+    </category>
+
+    <!-- ЦЕНА: короткий ввод -->
+    <category>
+        <pattern>ЦЕНА</pattern>
+        <template>Цена зависит от модели и производителя</template>
+    </category>
+
+    <category>
+        <pattern>СКОЛЬКО</pattern>
+        <template>Цена зависит от модели и производителя</template>
+    </category>
+
+    <category>
+        <pattern>СКОЛЬКО ЭТО СТОИТ</pattern>
+        <template>Цена зависит от модели и бренда</template>
+    </category>
+
+    <!-- ПОКУПКА -->
+    <category>
+        <pattern>* КУПИТЬ *</pattern>
+        <template>Давайте подберём подходящий товар</template>
+    </category>
+
+    <category>
+        <pattern>* НУЖЕН *</pattern>
+        <template>Уточните, что именно вам нужно</template>
+    </category>
+
+    <!-- СЛУЧАЙНЫЕ ФРАЗЫ -->
+    <category>
+        <pattern>* КТО ТЫ *</pattern>
+        <template>Я чат-бот для подбора сантехники</template>
+    </category>
+
+    <category>
+        <pattern>* ЧЕМ ЗАНИМАЕШЬСЯ *</pattern>
+        <template>Я помогаю выбрать сантехнику</template>
+    </category>
+
+</aiml>
