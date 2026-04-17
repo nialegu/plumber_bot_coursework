@@ -132,26 +132,6 @@ async def handle_message(message: Message, state: FSMContext):
     # ML intent
     intent = classifier.predict(text)
 
-    # FSM (если пользователь в сценарии покупки)
-    current_state = await state.get_state()
-
-    if current_state == BuyFSM.choosing_category.state:
-        # пользователь уже выбирает товар → обрабатываем выбор
-        category = text
-
-        if "смеситель" in category:
-            product = "Смеситель для кухни"
-        elif "ванна" in category:
-            product = "Ванна акриловая"
-        elif "унитаз" in category:
-            product = "Унитаз компакт"
-        else:
-            product = find_product_by_text(text) or get_random_product()
-
-        await message.answer(f"Рекомендую: {product} 🚿")
-        await state.clear()
-        return
-
     # Intent: buy → старт FSM
     if intent == "buy":
         await state.set_state(BuyFSM.choosing_category)
